@@ -1,6 +1,6 @@
 # R-code_Mitsui_Crucifx_CD_2017
 
-R-code for calculating the maximum likelihood estimates of the models:
+R-codes for calculating the maximum likelihood estimates of models:
 
 - bfgs_search_1d_test.R :
 
