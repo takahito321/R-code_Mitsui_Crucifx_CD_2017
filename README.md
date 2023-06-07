@@ -4,8 +4,8 @@
 
 ### bfgs_search_2d_vdp.R 
 
-- to calculate the maximum likelihood estimate of a 2D van der Pol oscillator model
-- Model equation : dz=(p[1]*z-p[2]*z^3/3+p[3]*v)*dt+p[5]*dW1, dv=(-z+p[4])*dt+p[6]*dW2 (see R-code)
+- to calculate the maximum likelihood estimate of a 2D van der Pol oscillator model:
+- dz=(p[1]*z-p[2]*z^3/3+p[3]*v)*dt+p[5]*dW1, dv=(-z+p[4])*dt+p[6]*dW2 (see R-code)
 - p<-c(10, 10, 10, -0.5, 0.4, 0.2, 0.1) : true parameter values
 - Maximal likelihood estimate fit$par : 9.81218211  9.99239906  9.79013847 -0.48895473  0.42612936  0.16403794  0.09005438 (sample)
 - initial parameter guess : set[1,] set[2,] ... set[ensemble, ]
