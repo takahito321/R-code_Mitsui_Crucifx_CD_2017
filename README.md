@@ -1,6 +1,6 @@
 # R-code_Mitsui_Crucifx_CD_2017
 
-R-codes for calculating the maximum likelihood estimates of models:
+# R-codes for the maximum likelihood estimates
 
 ## bfgs_search_1d_test.R 
 
@@ -28,5 +28,5 @@ R-codes for calculating the maximum likelihood estimates of models:
 
 
 ---
-# Ref. MC17: Mitsui and Crucifix, Clim Dyn, Vol. 48 pp. 2729-2749 (2017)  
+## Ref. MC17: Mitsui and Crucifix, Clim Dyn, Vol. 48 pp. 2729-2749 (2017)  
 
