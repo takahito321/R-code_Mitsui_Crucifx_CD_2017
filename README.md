@@ -14,7 +14,7 @@ to calculate the maximum likelihood estimate of the 2D oscillator model with ful
 
 to calculate the maximum likelihood estimate of the oscillator model with full forcing (ice and insolation) for NGRIP d18O
 
-# Note that the fit of the oscillator model to -log10(Ca2+) is significantly better than that of NGRIP d18O. Thus, most of the conclusions of our paper are based on the results with -log10(Ca2+).
+Note that the fit of the oscillator model to -log10(Ca2+) is significantly better than that of NGRIP d18O. Thus, most of the conclusions of our paper are based on the results with -log10(Ca2+).
 
 
 ---
