@@ -1,10 +1,14 @@
 # R-code_Mitsui_Crucifx_CD_2017
 
-## R-codes for the maximum likelihood estimates
+## R-codes for the maximum likelihood estimates:
+
+### bfgs_search_2d_vdp.R 
+
+- to calculate the maximum likelihood estimate of a 2D van der Pol oscillator model
 
 ### bfgs_search_1d_test.R 
 
-- to calculate the maximum likelihood estimate of the 1D potential model for a sample time series
+- to calculate the maximum likelihood estimate of a 1D potential model
 
 ### bfgs_search_2d_ca_fullforcing.R 
 
