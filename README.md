@@ -1,16 +1,16 @@
 # R-code_Mitsui_Crucifx_CD_2017
 
-# R-codes for the maximum likelihood estimates
+## R-codes for the maximum likelihood estimates
 
-## bfgs_search_1d_test.R 
+### bfgs_search_1d_test.R 
 
 - to calculate the maximum likelihood estimate of the 1D potential model for a sample time series
 
-## bfgs_search_2d_ca_fullforcing.R 
+### bfgs_search_2d_ca_fullforcing.R 
 
 - to calculate the maximum likelihood estimate of the 2D oscillator model with full forcing (ice and insolation) for NGRIP -log10(Ca2+)
 
-## bfgs_search_2d_d18O_fullforcing.R 
+### bfgs_search_2d_d18O_fullforcing.R 
 
 - to calculate the maximum likelihood estimate of the oscillator model with full forcing (ice and insolation) for NGRIP d18O
 
@@ -18,7 +18,7 @@
 
 
 ---
-# Data time series:
+## Data time series:
 
 - seierstad_20yr.dat : NGRIP Ca2+ and d18O (see MC17 and code)
 
@@ -28,5 +28,5 @@
 
 
 ---
-## Ref. MC17: Mitsui and Crucifix, Clim Dyn, Vol. 48 pp. 2729-2749 (2017)  
+### Ref. MC17: Mitsui and Crucifix, Clim Dyn, Vol. 48 pp. 2729-2749 (2017)  
 
