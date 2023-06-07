@@ -17,15 +17,15 @@ library(lhs) # do install.packages("lhs") in the R-terminal if you have not inst
 ###  Preparing a test time series with the following model:
 ###
 ###  - Stochastic van der Pol oscillator (Ito stochastic differential equation; SDE):
-###    dz=(p[1]*z-p[2]*z^3/3+p[3]*v)*dt+p1[5]*dW1 
-###    dv=                 (-z+p[4])*dt+p1[6]*dW2 (W1, W2 are standard Wiener processes)
+###    dz=(p[1]*z-p[2]*z^3/3+p[3]*v)*dt+p[5]*dW1 
+###    dv=                 (-z+p[4])*dt+p[6]*dW2 (W1, W2 are standard Wiener processes)
 ###
 ###  - Observation model: y=z+(Gaussian white noise with stadnard deviation of p[7])
 ###
 ###  - p[1], ..., p[7] are the paremeters to be estimated 
 
 L<-20                     # spacing of observation times (yr), 20 yr
-t<-seq(1,20000,by=L)      # observation times (yr), 26000-90000 yr (0-64000 yr gives the same result!)
+t<-seq(0,20000,by=L)      # observation times (yr), 26000-90000 yr (0-64000 yr gives the same result!)
 n<-length(t)              # number of observed data (length of observations), n=3201
 h<-0.001                  # integration time step (_kyr_)  
 y<-numeric(n)             # vector of length n to store the observations
@@ -116,8 +116,11 @@ set<-matrix(lo,ensemble,length(ps),byrow=T)+set %*% diag(up-lo) # the initial pa
 #    - fnscale=-1 makes maximization enable
 #    - parscale=ps is important to avoid numerical divergences, which would happen probably by prescribing very bad parameter values to the function 'ukf'
 #    - trace = TRUE allows you to monitor the intermediate results of the optimization
-fit<-optim(set[1,], fn=ukf, method=c("L-BFGS-B"), lower=lo, upper=up, control=list(fnscale=-1, parscale=ps, maxit=1000, trace=TRUE))  # MLE computed from initial parameter guess set[1,]
-#fit<-optim(set[2,], fn=ukf, method=c("L-BFGS-B"), lower=lo, upper=up, control=list(fnscale=-1, parscale=ps, maxit=1000, trace=TRUE))  # MLE computed from initial parameter guess set[2,]
+#fit<-optim(set[1,], fn=ukf, method=c("L-BFGS-B"), lower=lo, upper=up, control=list(fnscale=-1, parscale=ps, maxit=1000, trace=TRUE))  # MLE computed from initial parameter guess set[1,]
+fit<-optim(set[2,], fn=ukf, method=c("L-BFGS-B"), lower=lo, upper=up, control=list(fnscale=-1, parscale=ps, maxit=1000, trace=TRUE))  # MLE computed from initial parameter guess set[2,]
+
+# result
+fit$par
 
 ##########################################################################################################################################
 
