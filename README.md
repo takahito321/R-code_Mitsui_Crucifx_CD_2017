@@ -4,7 +4,11 @@
 
 ### bfgs_search_2d_vdp.R 
 
-- to calculate the maximum likelihood estimate of a 2D van der Pol oscillator model
+- to calculate the maximum likelihood estimate of a 2D van der Pol oscillator model (see R-code)
+- p<-c(10, 10, 10, -0.5, 0.4, 0.2, 0.1) : true parameter values
+- Maximal likelihood estimate (sample) : 9.81218211  9.99239906  9.79013847 -0.48895473  0.42612936  0.16403794  0.09005438
+- initial parameter guess : set[1,] set[2,] ... set[ensemble, ]
+- maxit=1000 : maximal iteration steps in likelihood optimization by "L-BFGS-B"
 
 ### bfgs_search_1d_test.R 
 
