@@ -25,7 +25,7 @@ library(lhs) # do install.packages("lhs") in the R-terminal if you have not inst
 ###  - p[1], ..., p[7] are the paremeters to be estimated 
 
 L<-20                     # spacing of observation times (yr), 20 yr
-t<-seq(0,20000,by=L)      # observation times (yr), 26000-90000 yr (0-64000 yr gives the same result!)
+t<-seq(0,20000,by=L)      # observation times (yr), 0, 20, 40, ..., 20000 yr 
 n<-length(t)              # number of observed data (length of observations), n=3201
 h<-0.001                  # integration time step (_kyr_)  
 y<-numeric(n)             # vector of length n to store the observations
